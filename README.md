@@ -1,18 +1,5 @@
-# Salesforce DX Project: Next Steps
+# LWC Apex Permission Enforcement
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This app checks Apex access enforcement for LWC. The Home Page has a simple component that will either return `Hello World` if you user has access and `You do not have access to the Apex class named 'TestPermissionController'` if you do not. This repo removes access to the Apex Class `TestPermissionController` for the System Administrator, so you should expect to see the error message.
 
-## How Do You Plan to Deploy Your Changes?
-
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Note: you will need to change the default Home Page, or simple just drop in the testPermission LWC component somewhere in your app
