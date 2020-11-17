@@ -10,8 +10,7 @@ export default class TestPermission extends LightningElement {
             this.message = data;
         }
         if (error) {
-            debugger;
-            this.message = 'Something happened';
+            this.message = error.body.message;
         }
     }
 }
